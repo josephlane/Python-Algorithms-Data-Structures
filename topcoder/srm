@@ -1,0 +1,10 @@
+class name:
+	def method(self, p):
+		list
+
+
+
+a = []
+b = ()
+s = name()
+s.method()
