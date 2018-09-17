@@ -1,11 +1,16 @@
-def shortestPalindrome(s):
-    for i in xrange(len(s) - 1, 0, -1):
+def shortestPalindrome(self, s):
+    x = list(s)
+    p = []
+    found = False
+    
+    for i in xrange(len(x), 0, -1):
         p.append(x[i])
-        if len(p) == len(x[1:]):
+        if p == x:
             found = True
             break
+    
     if found:
-        return "".join(p) + "".join(x)
+        return "".join(x) + "".join(p)
     else:
         return "None"
 
